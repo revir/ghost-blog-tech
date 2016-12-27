@@ -7,7 +7,6 @@
 {{#post}}
 <link rel="stylesheet" href="/assets/css/prism.css">
 <script src="/assets/js/prism.js"></script>
-
 {{> "header"}}
 
 
@@ -63,17 +62,24 @@
 
             <section class="share">
                 <h4>Share this post</h4>
+                <a class="fa fa-weibo" href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'weibo-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Weibo</span>
+                </a>
                 <a class="fa fa-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
                 <a class="fa fa-google" href="https://plus.google.com/share?url={{url absolute="true"}}"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
+                </a>
+                <a href="#" class='basicShareBtn'
+                    data-shareUrl="{{url absolute="true"}}"
+                    data-sharePic="{{#if image}} url({{image}}) {{/if}}"
+                    title="更多分享"
+                >
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
                 </a>
             </section>
 
