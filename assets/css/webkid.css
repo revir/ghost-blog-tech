@@ -278,6 +278,14 @@ body * {
   background: #333333;
 }
 
+.social-item.weibo {
+  background: orange;
+}
+
+.social-item.zhihu {
+  background: #0767c8;
+}
+
 .sidebox.social ul li {
   margin: 0;
   padding: 0;
