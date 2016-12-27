@@ -53,7 +53,7 @@ body * {
 
 #header .taglist-wrapper {
   width: 100%;
-  background: #ffd00e;
+  background: #55acee;
   padding: 0;
 }
 
@@ -145,7 +145,7 @@ body * {
   color: #111;
 }
 
-#articles .post a, 
+#articles .post a,
 #articles .post a:visited{
   text-decoration: none;
 }
