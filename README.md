@@ -1,10 +1,15 @@
+This is a ghost theme used by [NodeBB.TECH](http://nodebb.tech), which is a tech blog writing about NodeBB from the inside out.
+This theme is forked from [ghost-wbkd](https://github.com/wbkd/ghost-wbkd), thanks for his excellent job.
+This theme is under actively development, be careful if you want to use it, some of the codes may be not suitable for your site.
+
 # ghost-wbkd
 A [ghost](https://ghost.org/)/[journey](https://github.com/kabukky/journey) theme.
 
 
-![screenshot](https://raw.githubusercontent.com/wbkd/ghost-wbkd/master/screenshot.jpg)
+# Screenshot
+[![screenshot](./home.png)](http://nodebb.tech)
 
-**See it live on [our blog](http://blog.webkid.io)**
+**See it live on [NodeBB.TECH](http://nodebb.tech)**
 
 ### Install
 
@@ -20,57 +25,3 @@ After that, restart the blog and select the webkid theme in your ghost admin pan
 ### Customize
 
 Due to restrictions of the Ghost templates, some values are hard-coded at the moment. To customize the theme, you have to edit the Handlebars templates in the theme folder.
-
-**Disqus**
-
-To enable the Disqus comment module, you have to add you Disqus username in the ```post.hbs``` file:
-
-```
-var disqus_shortname = 'example'; // required: replace example with your forum shortname
-```
-
-
-**Navigation**
-
-For changing the navigation links and labels, you have to edit the ```partials/header.hbs``` file.
-
-```
-<!--Change this to customize the navigation-->
-<div class="taglist-wrapper clearfix">
-  <ul id="taglist" class="taglist">
-      <li><a href="{{@blog.url}}">Home</a></li>
-      <li><a href="/tag/javascript">javascript</a></li>
-      <li><a href="/tag/nodejs">nodejs</a></li>
-      <li><a href="/tag/data-visualization">data visualization</a></li>
-      <li><a href="/tag/d3">d3</a></li>
-      <li><a href="/tag/maps">maps</a></li>
-  </ul>
-</div>
-```
-
-**Sidebar Widgets**
-
-There are three widgets in the sidebar: About, Social and Latest Articles. The latest articles are pulled automatically from the RSS-Feed of your page. If you want to change the url of your RSS-Feed, you have to edit the ```assets/js/webkid.js``` file.
-
-The other two widgets are configured in the ```partials/sidebar.hbs``` template.
-
-```
-<!--Change this to your homepage-->
-<p>See our latest projects at <a href="http://www.webkid.io">webkid.io</a></p>
-
-<!--Change the links to your sites-->
-<div class="sidebox box social clearfix">
-  <ul>
-    <a href="/rss" target="_blank" class="social-item rss"><li><i class="fa fa-rss"></i></li></a>
-    <a href="http://twitter.com/webk1d" target="_blank" class="social-item tw"><li><i class="fa fa-twitter"></i></li></a>
-    
-    <a href="http://github.com/wbkd" target="_blank" class="social-item github"><li><i class="fa fa-github"></i></li></a>
-    
-    <a href="http://webkid.io" target="_blank" class="social-item home"><li><i class="fa fa-home"></i></li></a>
-  </ul>
-</div>
-```
-
-### Authors
-
-[Moritz Klack](http://twitter.com/moklick) and [Christopher Möller](http://twitter.com/chrtze) of [webkid.io](http://www.webkid.io).
